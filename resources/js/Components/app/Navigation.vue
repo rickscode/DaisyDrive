@@ -8,6 +8,18 @@
             </Link>
             DaisyDrive
         </div>
+        <div class="px-4">
+            <CreateDropDown />
+        </div>
+        <div class="py-4">
+            <NavLink href="/">My Saved Files</NavLink>
+            <NavLink href="/">Files Shared By Me</NavLink>
+            <NavLink href="/">Files Shared With Me</NavLink>
+            <NavLink href="/">Deleted Files</NavLink>
+
+
+
+        </div>
     </nav>
         
     
@@ -17,7 +29,9 @@
 // Imports
 import {Link} from '@inertiajs/vue3'
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
-;
+import CreateDropDown from "@/Components/app/CreateDropDown.vue";
+import NavLink from '@/Components/NavLink.vue';
+
 
 // Uses
 
