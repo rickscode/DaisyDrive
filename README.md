@@ -13,5 +13,5 @@
 * MySql
 * Amazon S3
 
-This project is still not complete and will take a few more days for full functionality, the reason for this project is to refresh my knowledge of full stack php applications which I have worked with in past roles.
+This project is still not complete and will take some more days for full functionality, The reason for this project is to refresh my knowledge of OOP Design and of how to develop full-stack PHP applications which I have worked on in past roles in mt career.
 
