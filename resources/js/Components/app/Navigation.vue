@@ -1,3 +1,25 @@
+<script setup>
+// Imports
+import {Link} from '@inertiajs/vue3'
+import ApplicationLogo from "@/Components/ApplicationLogo.vue";
+import CreateDropDown from "@/Components/app/CreateDropDown.vue";
+import NavLink from '@/Components/NavLink.vue';
+
+
+// Uses
+
+// Refs
+
+// Props & Emit
+
+// Computed
+
+// Methods
+
+// Hooks
+
+</script>
+
 <template>
     <nav class="min-w-[200px]">
             <Link :href="route('myFiles')" class="h-[800] px-3 flex items-center gap-3">
@@ -24,25 +46,3 @@
         
     
 </template>
-
-<script setup>
-// Imports
-import {Link} from '@inertiajs/vue3'
-import ApplicationLogo from "@/Components/ApplicationLogo.vue";
-import CreateDropDown from "@/Components/app/CreateDropDown.vue";
-import NavLink from '@/Components/NavLink.vue';
-
-
-// Uses
-
-// Refs
-
-// Props & Emit
-
-// Computed
-
-// Methods
-
-// Hooks
-
-</script>
