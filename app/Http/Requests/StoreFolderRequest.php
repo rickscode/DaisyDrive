@@ -32,4 +32,11 @@ class StoreFolderRequest extends ParentIdBaseRequest
             ]
         ); 
     }
+
+    public function messages()
+    {
+        return [
+            'name.unique' => 'Folder ":input" already exists'
+        ];
+    }
 }
