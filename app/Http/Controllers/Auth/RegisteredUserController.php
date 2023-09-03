@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\File;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
@@ -46,6 +47,11 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
 
         Auth::login($user);
+
+        $file = new File();
+        $file->name = $user->email;
+        $file->is_folder = 1;
+        $file->makeRoot()->save();
 
         return redirect(RouteServiceProvider::HOME);
     }
