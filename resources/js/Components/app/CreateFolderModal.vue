@@ -37,12 +37,12 @@ const emit = defineEmits(['update:modelValue'])
 </script>
 
 <template>
-    <modal :show="modelValue">
+    <modal :show="modelValue" max-width="md">
         <div class="p-7">
             <h2 class="font-medium text-lg text-gray-800">Create New Folder</h2>
         </div>
         <div class="mt-7 p-1">
-            <InputLabel for="folderName" value="Folder Name"/>
+            <InputLabel for="folderName" value="Folder Name" class="sr-only"/>
             <TextInput  type="text" 
                         id="folderName"  v-model="form.name"
                         class="mt-1 block w-full"
